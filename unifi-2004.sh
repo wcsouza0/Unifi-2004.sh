@@ -1,18 +1,71 @@
 #!/bin/bash
+# Aut
+# Site:
+# Rede Social
+# Instagran
+# Canal
+# Data de criação: 28/05/2023
+# Data de atualização: 
+# Versão: 
+# versão do Ubuntu Server 20.04.x LTS x64
+# versão do Unifi Controller 6.2.x, MongoDB 3.6.x, OpenJDK e OpenJRE 11.x
 #
-# Variável da Data Inicial para calcular o tempo de execução do script (VARIÁVEL MELHORADA)
-# opção do comando date: +%T (Time)
+# O 
+# O 
+# O 
+# O 
+# O
+# O
+#
+# Instrucao de configuracao do unifi web
+# Step 1 of 6:
+#   Name Your Controller
+#       Controller Name: xxxxxx
+#       By selecting this you are agreeing to end user license agreement and the terms of service: ON <Next>
+# Step 2 of 6:
+#   Sign in with your Ubiquiti Account
+#       Username: usuário Id-SSO https://account.ui.com
+#       Password: senha  <Next>
+# Step 3 of 6:
+#   UniFi Network Setup
+#       Automatically optimize my network: ON
+#       Enable Auto Backup: <Next>
+# Step 4 of 6:
+#   Devices Setup: <Next>
+# Step 5 of 6:
+#   WiFi Setup: <Skip>
+# Step 6 of 6:
+#   Review Configuration:
+#       Country or territory: Brazil
+#       Timezone: (UTC-03:00)America/Sao_Paulo <Next>
+#   Next
+#   Next
+#
+# Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
+# Site Oficial do Unifi Software: https://www.ui.com/download/unifi
+# Site Oficial do Unifi ID-SSO: https://account.ui.com
+# Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
+# Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
+#
+# Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89
+# Wifiman: http://wifiman.com/
+# Nperf 
+#
+# Veja alguns Vídeos de instalação do GNU/Linux Ubuntu Server 20.04.x LTS
+#
+# Variável da Data Inicial 
+# comando date: +%T (Time)
 HORAINICIAL=$(date +%T)
 #
-# Variáveis para validar o ambiente, verificando se o usuário é "root", versão do ubuntu e kernel
-# opções do comando id: -u (user)
-# opções do comando: lsb_release: -r (release), -s (short), 
-# opões do comando uname: -r (kernel release)
-# opções do comando cut: -d (delimiter), -f (fields)
-# opção do shell script: piper | = Conecta a saída padrão com a entrada padrão de outro comando
-# opção do shell script: acento crase ` ` = Executa comandos numa subshell, retornando o resultado
-# opção do shell script: aspas simples ' ' = Protege uma string completamente (nenhum caractere é especial)
-# opção do shell script: aspas duplas " " = Protege uma string, mas reconhece $, \ e ` como especiais
+# Variáveis para acompanhar area do usuario, verificando se o usuário é "root", versão do ubuntu e kernel
+# comando id: -u (user)
+# comando: lsb_release: -r (release), -s (short), 
+# comando uname: -r (kernel release)
+# comando cut: -d , -f 
+# shell script: piper | = Conecta a saída padrão com a entrada padrão de outro comando
+# shell script: acento crase ` ` = Executa comandos numa subshell, retornando o resultado
+# shell script: aspas simples ' ' = Protege uma string completamente (nenhum caractere é especial)
+# shell script: aspas duplas " " = Protege uma string, mas reconhece $, \ e ` como especiais
 USUARIO=$(id -u)
 UBUNTU=$(lsb_release -rs)
 #
@@ -21,7 +74,7 @@ UBUNTU=$(lsb_release -rs)
 # $0 (variável de ambiente do nome do comando)
 LOG="/var/log/$(echo $0 | cut -d'/' -f2)"
 #
-# Declarando as variáveis de download do Unifi (Links atualizados no dia 28/05/2023)
+# Declarando as variáveis de download do Unifi (Links atualizados no dia 06/01/2021)
 KEYSRVMONGODB="https://www.mongodb.org/static/pgp/server-3.6.asc"
 KEYUNIFI="https://dl.ui.com/unifi/unifi-repo.gpg"
 #
