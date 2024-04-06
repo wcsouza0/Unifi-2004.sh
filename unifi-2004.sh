@@ -242,7 +242,6 @@ echo -e "Portas de conexões verificadas com sucesso!!!, continuando com o scrip
 sleep 5
 #
 echo -e "Instalação do Unifi Controller feita com Sucesso!!!."
-	# script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)
 	# opção do comando date: +%T (Time)
 	HORAFINAL=$(date +%T)
 	# opção do comando date: -u (utc), -d (date), +%s (second since 1970)
